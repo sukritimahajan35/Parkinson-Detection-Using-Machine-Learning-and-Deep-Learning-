@@ -1,42 +1,42 @@
-# 🧠 Parkinson Detection Using Machine Learning and Deep Learning
+# 🧠 Parkinson Detection Using Machine Learning and Deep Learning  
 
-## 📌 Project Overview
-This project focuses on the early detection of Parkinson’s disease using both **Machine Learning (ML)** and **Deep Learning (DL)** techniques. The Project uses **text-based (biomedical & telemonitoring data)** and **image-based (hand-drawn spiral/wave drawings)** datasets to build predictive and regression models for accurate diagnosis.
+## 📌 Project Overview  
+This project focuses on early detection of Parkinson’s disease using separate Machine Learning (ML) and Deep Learning (DL) approaches.  
 
----
+Machine Learning models were applied to biomedical and telemonitoring datasets, while Deep Learning models were implemented on image-based spiral and wave drawing datasets for automated feature extraction and classification.
 
-## 🎯 Objectives
+## 🎯 Objectives  
 • Detect Parkinson’s disease using classification models  
 • Predict severity levels using regression models  
 • Analyze biomedical voice and telemonitoring features  
 • Apply deep learning models on image-based datasets  
-• Compare ML and DL model performance  
+• Compare performance of ML and DL models independently  
 
----
+## 📊 Dataset  
+• Biomedical voice measurements dataset  
+• Telemonitoring dataset  
+• Hand-drawn spiral and wave image dataset  
+• Clinical motor impairment indicators  
 
-## 📊 Dataset Description
-The project uses multiple datasets containing:
-• Biomedical voice measurements  
-• Telemonitoring data  
-• Hand-drawn spiral and wave images    
-These datasets capture various aspects of Parkinson’s disease progression and motor impairment.
+## 🛠️ Preprocessing  
+• Missing value validation  
+• Feature scaling and normalization  
+• Feature selection and engineering  
+• Image resizing and preprocessing (for DL models)  
+• Train-test splitting  
 
----
+## 🤖 Machine Learning Models  
 
-## 🤖 Machine Learning Models
-
-### 🔹 Classification Models
+### Classification  
 • Support Vector Machine (SVM)  
 • Decision Tree (DT)  
 • Random Forest  
 • Naive Bayes  
 • XGBoost  
 • Voting Classifier  
-• Stacking Classifier  
-  - Base Models: Decision Tree + XGBoost  
-  - Meta Model: Logistic Regression  
+• Stacking Classifier (DT + XGBoost as base, Logistic Regression as meta-model)  
 
-### 🔹 Regression Models
+### Regression  
 • Linear Regression (LR)  
 • Lasso Regression  
 • Ridge Regression  
@@ -44,35 +44,21 @@ These datasets capture various aspects of Parkinson’s disease progression and 
 • Decision Tree Regression (CART)  
 • K-Nearest Neighbors Regression (KNN)  
 
----
-
-## 🧠 Deep Learning Models
+## 🧠 Deep Learning Models  
 • InceptionV3 (Transfer Learning)  
 • MobileNet (Transfer Learning)  
 • Custom Convolutional Neural Network (CNN)  
 
-Deep learning models were applied primarily to image-based datasets for improved feature extraction and pattern recognition.
-
----
-
-## 📈 Evaluation Metrics
-
-### Classification
+## 📈 Evaluation  
 • Accuracy  
 • Precision  
 • Recall  
 • F1-Score  
 • Confusion Matrix  
 • ROC-AUC  
+• MAE, MSE, R² Score (for regression models)  
 
-### Regression
-• Mean Absolute Error (MAE)  
-• Mean Squared Error (MSE)  
-• R² Score  
-
----
-
-## 🚀 Tech Stack
+## 🚀 Tech Stack  
 • Python  
 • Pandas, NumPy  
 • Scikit-learn  
@@ -81,9 +67,5 @@ Deep learning models were applied primarily to image-based datasets for improved
 • OpenCV  
 • Matplotlib, Seaborn  
 
----
-
-## 📌 Conclusion
-This project demonstrates how integrating Machine Learning and Deep Learning techniques across multimodal datasets (biomedical + image-based) can enhance early Parkinson’s detection.  
-
-The hybrid ML-DL approach improves diagnostic accuracy and provides a scalable framework for AI-assisted healthcare systems.
+## 📌 Conclusion  
+This project demonstrates separate ML and DL frameworks for Parkinson’s detection. Traditional machine learning models were effective for structured biomedical data, while deep learning models improved classification performance on image-based datasets, providing scalable AI solutions for healthcare diagnostics.
